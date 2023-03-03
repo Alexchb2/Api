@@ -31,7 +31,7 @@ Cypress.Commands.add('updateUser', (id, username, firstName, lastName, email, pa
 Cypress.Commands.add('deleteUser', (username) => {
   cy.request({
       method: "DELETE",
-      url: "https://petstore.swagger.io/v2/user/Aleksei222",
+      url: `https://petstore.swagger.io/v2/user/${username}`,
   })
 });
   
